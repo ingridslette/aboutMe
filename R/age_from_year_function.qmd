@@ -1,0 +1,16 @@
+---
+title: "Writing 'Age from Year' function"
+format: html
+---
+
+## Write function to calculate age based on current year
+```{r}
+format(Sys.Date(), "%Y")
+
+age_from_year <- function(x) {
+  age <- (as.numeric(format(Sys.Date(), "%Y"))) - x
+  return(age)
+}
+
+age_from_year(2000)
+```
